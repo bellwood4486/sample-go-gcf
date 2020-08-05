@@ -6,5 +6,5 @@ import (
 )
 
 func HelloHTTP(w http.ResponseWriter, r *http.Request) {
-	_, _ = fmt.Fprint(w, "Hello, World!")
+	_, _ = fmt.Fprint(w, "Hello, World!2")
 }
