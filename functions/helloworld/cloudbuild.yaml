@@ -1,0 +1,9 @@
+steps:
+  - name: 'mirror.gcr.io/library/golang'
+    args: ['go', 'version']
+  - name: 'mirror.gcr.io/library/golang'
+    args: ['go', 'test']
+    dir: 'functions/helloworld'
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['functions', 'deploy', 'HelloHTTP', '--trigger-http', '--allow-unauthenticated', '--runtime', 'go113']
+    dir: 'functions/helloworld'
