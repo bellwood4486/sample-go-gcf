@@ -6,7 +6,7 @@ import (
 )
 
 func HelloHTTP(w http.ResponseWriter, r *http.Request) {
-	_, _ = fmt.Fprint(w, "Hello, World!4")
+	_, _ = fmt.Fprint(w, "Hello, World!5")
 }
 
 func Verify(r *http.Request) error {
